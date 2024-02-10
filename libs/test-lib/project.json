@@ -1,0 +1,20 @@
+{
+  "name": "test-lib",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/test-lib/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "component-test": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "libs/test-lib/cypress.config.ts",
+        "testingType": "component",
+        "skipServe": true
+      }
+    }
+  }
+}

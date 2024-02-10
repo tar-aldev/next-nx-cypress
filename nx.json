@@ -39,6 +39,10 @@
           "codeCoverage": true
         }
       }
+    },
+    "component-test": {
+      "cache": true,
+      "inputs": ["default", "^production"]
     }
   },
   "namedInputs": {
@@ -64,6 +68,9 @@
         "style": "scss",
         "linter": "eslint"
       }
+    },
+    "@nx/react": {
+      "library": {}
     }
   }
 }
