@@ -1,5 +1,4 @@
 import { mount } from 'cypress/react18';
-import './styles.ct.css';
 // ***********************************************************
 // This example support/component.ts is processed and
 // loaded automatically before your test files.
